@@ -59,7 +59,7 @@ tuple = ["Tuple", 1]
 enum ActionTypes {
     GET_TODO_REQUEST,
     GET_TODO_SUCCESS = 5,
-    GET_TODO_FAILURE 
+    GET_TODO_FAILURE // 6 
 }
 
 function reducer( action: ActionTypes ){
@@ -85,7 +85,7 @@ reducer( action );
 
 // null and undefined
 let n: null = null;
-let u: undefined = undefined;
+// let u: undefined = undefined;
 
 // void
 // empty no return 
@@ -100,13 +100,13 @@ let f: string = "1";
 let c: number = 1;
 
 // optional values
-function printName( firstName: string, lastName?:string ): string {
+function printNames( firstName: string, lastName?:string ): string {
     let res: string = firstName;
     if ( lastName ) res += " " + lastName;
     return res;
 }
 
-let res = printName("Ravi");
+let res = printNames("Ravi");
 console.log(res);
 
 // avoid
