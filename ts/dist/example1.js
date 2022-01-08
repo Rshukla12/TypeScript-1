@@ -44,7 +44,7 @@ var ActionTypes;
 (function (ActionTypes) {
     ActionTypes[ActionTypes["GET_TODO_REQUEST"] = 0] = "GET_TODO_REQUEST";
     ActionTypes[ActionTypes["GET_TODO_SUCCESS"] = 5] = "GET_TODO_SUCCESS";
-    ActionTypes[ActionTypes["GET_TODO_FAILURE"] = 6] = "GET_TODO_FAILURE";
+    ActionTypes[ActionTypes["GET_TODO_FAILURE"] = 6] = "GET_TODO_FAILURE"; // 6 
 })(ActionTypes || (ActionTypes = {}));
 function reducer(action) {
     switch (action) {
@@ -66,7 +66,7 @@ const action = ActionTypes.GET_TODO_REQUEST;
 reducer(action);
 // null and undefined
 let n = null;
-let u = undefined;
+// let u: undefined = undefined;
 // void
 // empty no return 
 function printData(a) {
@@ -78,13 +78,13 @@ function addData(a, b) {
 let f = "1";
 let c = 1;
 // optional values
-function printName(firstName, lastName) {
+function printNames(firstName, lastName) {
     let res = firstName;
     if (lastName)
         res += " " + lastName;
     return res;
 }
-let res = printName("Ravi");
+let res = printNames("Ravi");
 console.log(res);
 const todoItem = {
     id: 1,

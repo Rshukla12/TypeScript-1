@@ -15,12 +15,11 @@ declare enum ActionTypes {
 declare function reducer(action: ActionTypes): void;
 declare const action = ActionTypes.GET_TODO_REQUEST;
 declare let n: null;
-declare let u: undefined;
 declare function printData(a: number): void;
 declare function addData(a: number, b: number): number;
 declare let f: string;
 declare let c: number;
-declare function printName(firstName: string, lastName?: string): string;
+declare function printNames(firstName: string, lastName?: string): string;
 declare let res: string;
 interface TodoItem {
     id: number;
